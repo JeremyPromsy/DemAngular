@@ -4,9 +4,9 @@ import { FaceSnapsService } from '../services/face-snaps.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-single-facesnap',
-  templateUrl: './single-facesnap.component.html',
-  styleUrls: ['./single-facesnap.component.scss']
+  selector: 'app-single-face-snap',
+  templateUrl: './single-face-snap.component.html',
+  styleUrls: ['./single-face-snap.component.scss']
 })
 
   export class SingleFaceSnapComponent implements OnInit {
