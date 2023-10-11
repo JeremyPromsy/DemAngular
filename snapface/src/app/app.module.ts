@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { registerLocaleData } from '@angular/common';
-import * as fr from '@angular/common/locales/fr';
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
-import { AuthModule } from './auth/auth.module';
-import { LandingPageComponent } from './landing-page/components/landing-page/landing-page.component';
+import { FaceSnapsModule } from './face-snaps/face-snaps.module';
+import { LandingPageModule } from './landing-page/landing-page.module';
 
 @NgModule({
   declarations: [
@@ -14,15 +12,11 @@ import { LandingPageComponent } from './landing-page/components/landing-page/lan
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
     CoreModule,
-    LandingPageComponent,
-    AuthModule,
+    FaceSnapsModule,
+    LandingPageModule
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  constructor() {
-    registerLocaleData(fr.default);
-  }
-}
+export class AppModule {}
